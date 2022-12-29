@@ -8,3 +8,5 @@ Add curve to each score to find final grades.
 
 HighestScoreCurve.py: Create variable called curve that subtracts the highest grade from 100.
 Add curve to each score to find final grades.
+
+FunCalls.py: Holds functions that can be used in both AverageCurve.py and HighestScoreCurve.py.
