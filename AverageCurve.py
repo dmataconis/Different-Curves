@@ -1,39 +1,5 @@
-import sys
-# Method: return a list of ints corresponding to a list of strings
-def convert_to_int(string_list):
-
-    scores = []
-
-    for string_score in string_list:
-        score = int(string_score)
-        scores.append(score)
-
-    return scores
-
-
-# Method: compute the average of a list of ints
-def average(int_list):
-
-    sum = 0
-
-    for value in int_list:
-        sum += value
-
-    avg = sum / len(int_list)
-    return avg
-
-
-# Method: report the indexes
-def indexes_above(threshold, int_list):
-
-    indexes = []
-
-    for index in range(len(int_list)):
-        if int_list[index] > threshold:
-            indexes.append(index)
-
-    return indexes
-
+from FunCalls import *
+# Method: Print lowest and highest integer
 def print_lowest_highest(int_list):
     int_min = sys.maxsize
     int_max = -2000
@@ -44,7 +10,7 @@ def print_lowest_highest(int_list):
             int_max = int_list[index]
     print('Highest Score =', int_max)
     print('Lowest Score =', int_min)
-
+# Method: Find curve, print curve, add curve to each score and return list
 def curve(int_list, avg):
     curve = 100 - avg
     print('Curve:', curve, 'points')
